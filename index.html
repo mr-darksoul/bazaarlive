@@ -329,8 +329,9 @@ async function loadStreams() {
   );
 
   const badge = document.getElementById('hero-badge');
+  const uniqueSellerCount = new Set(streams.map(function(s) { return s.seller_id; })).size;
   badge.innerHTML = '<div class="live-dot"></div> ' +
-    streams.length + ' seller' + (streams.length !== 1 ? 's' : '') + ' live right now';
+    uniqueSellerCount + ' seller' + (uniqueSellerCount !== 1 ? 's' : '') + ' live right now';
 
   if (streams.length > 0) {
     const top = streams[0];
