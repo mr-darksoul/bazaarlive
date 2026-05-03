@@ -26,7 +26,7 @@
     footer { background: #09090d; border-top: 1px solid var(--border); padding: 1.5rem 4%; text-align: center; color: var(--muted); font-size: 0.8rem; }
     footer a { color: var(--muted); text-decoration: none; margin: 0 0.75rem; }
     footer a:hover { color: var(--text); }
-</style>
+  </style>
 </head>
 <body>
 <nav>
@@ -35,7 +35,7 @@
 </nav>
 <div class="page">
   <h1 class="page-title">Privacy Policy</h1>
-  <p class="page-meta">Last updated: 27 April 2025 &nbsp;·&nbsp; Effective: 27 April 2025</p>
+  <p class="page-meta">Last updated: 3 May 2026 &nbsp;·&nbsp; Effective: 27 April 2025</p>
 
   <div class="highlight"><p>BazaarLive ("we", "our", "us") is committed to protecting your personal information. This policy explains what we collect, why we collect it, and how you can exercise your rights under the <strong>Information Technology Act, 2000</strong> and the <strong>Digital Personal Data Protection Act, 2023</strong>.</p></div>
 
@@ -48,10 +48,11 @@
   </ul>
   <h3>1.2 Information collected automatically</h3>
   <ul>
-    <li>Device type, operating system, and app version.</li>
+    <li>Device type, operating system version, and app version.</li>
     <li>IP address and approximate location (city/state level).</li>
     <li>Session logs: pages viewed, streams watched, products tapped, time spent.</li>
     <li>Crash reports and performance diagnostics.</li>
+    <li><strong>Device identifiers</strong> — the BazaarLive app requests the <code>READ_PHONE_STATE</code> Android permission solely to allow Razorpay to read a device identifier (e.g. IMEI or equivalent) for payment fraud detection and risk scoring. This identifier is transmitted to Razorpay and is never stored by BazaarLive independently. See Razorpay's privacy policy at <a href="https://razorpay.com/privacy/" target="_blank" rel="noopener">razorpay.com/privacy</a>.</li>
   </ul>
 
   <h2>2. How We Use Your Information</h2>
@@ -67,16 +68,27 @@
   <h2>3. Sharing of Information</h2>
   <p>We do not sell your personal data. We share it only with:</p>
   <ul>
-    <li><strong>Razorpay Software Private Limited</strong> — to process payments securely.</li>
+    <li><strong>Razorpay Software Private Limited</strong> — to process payments securely, including device identifiers for fraud prevention as described in §1.2.</li>
     <li><strong>Logistics partners</strong> — your name and delivery address, solely to fulfil your order.</li>
     <li><strong>Agora Inc.</strong> — for real-time video streaming infrastructure (no personal data shared beyond session tokens).</li>
+    <li><strong>Supabase Inc.</strong> — for authentication, database, and backend hosting (data stored in AWS Mumbai region).</li>
     <li><strong>Legal authorities</strong> — when required by a court order or applicable law.</li>
   </ul>
 
-  <h2>4. Data Retention</h2>
+  <h2>4. Android App — Google Play Data Safety</h2>
+  <p>In compliance with Google Play's Data Safety requirements, the following summarises data collected by the BazaarLive app:</p>
+  <ul>
+    <li><strong>Personal info</strong> — phone number (required, shared with Razorpay and Supabase).</li>
+    <li><strong>Financial info</strong> — purchase history (required, stored for order fulfilment).</li>
+    <li><strong>Device or other IDs</strong> — device identifier via <code>READ_PHONE_STATE</code> (required, shared with Razorpay for fraud prevention only; not used for advertising).</li>
+    <li><strong>App activity</strong> — in-app actions, crash logs (required, used for app improvement).</li>
+  </ul>
+  <p>No data is collected for advertising or marketing profiling. All data collection is required for core app functionality.</p>
+
+  <h2>5. Data Retention</h2>
   <p>We retain your account data for as long as your account is active and for up to <strong>3 years</strong> thereafter, or as required by Indian tax and commercial law. Order records are retained for <strong>7 years</strong> to comply with GST regulations.</p>
 
-  <h2>5. Your Rights</h2>
+  <h2>6. Your Rights</h2>
   <p>Under the DPDP Act 2023, you have the right to:</p>
   <ul>
     <li>Access the personal data we hold about you.</li>
@@ -87,20 +99,20 @@
   </ul>
   <p>To exercise any right, email <a href="mailto:manavb28@iimk.ac.in">manavb28@iimk.ac.in</a> with subject line "Data Request". We will respond within <strong>30 days</strong>.</p>
 
-  <h2>6. Cookies &amp; Tracking</h2>
+  <h2>7. Cookies &amp; Tracking</h2>
   <p>Our website uses only essential cookies (session management). We do not use third-party advertising or tracking cookies.</p>
 
-  <h2>7. Security</h2>
+  <h2>8. Security</h2>
   <p>All data in transit is encrypted via TLS 1.2+. Data at rest is stored on Supabase (hosted in AWS Mumbai) with AES-256 encryption. We conduct periodic security reviews and limit data access to authorised personnel only.</p>
 
-  <h2>8. Changes to This Policy</h2>
+  <h2>9. Changes to This Policy</h2>
   <p>We may update this policy. Changes will be posted here with an updated "Last updated" date. Continued use of BazaarLive after changes constitutes acceptance.</p>
 
-  <h2>9. Contact</h2>
+  <h2>10. Contact</h2>
   <p>Questions about this policy? Contact our Grievance Officer at <a href="grievance.html">grievance.html</a> or email <a href="mailto:manavb28@iimk.ac.in">manavb28@iimk.ac.in</a>.</p>
 </div>
 <footer>
-  <p style="margin-bottom:0.75rem">© 2025 BazaarLive. New Delhi, India. Incubated at IIM Kozhikode.</p>
+  <p style="margin-bottom:0.75rem">© 2026 BazaarLive. New Delhi, India. Incubated at IIM Kozhikode.</p>
   <div><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms of Service</a><a href="refund.html">Refund Policy</a><a href="grievance.html">Grievance Officer</a></div>
 </footer>
 </body>
